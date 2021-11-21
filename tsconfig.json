@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+	"baseUrl": ".",
+	"paths": {
+		"src/components/*": ["components/*"],
+		"src/contexts/*": ["contexts/*"],
+		"src/hooks/*": ["hooks/*"],
+		"src/lib/*": ["lib/*"],
+		"src/pages/*": ["src/pages/*"],
+		"src/api/*": ["src/api/*"],
+		"src/theme/*": ["src/theme/*"]
+	}
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/_document.js",
+    "jest.config.js",
+    "__tests__/sum.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__"
+  ]
+}
